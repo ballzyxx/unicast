@@ -3,5 +3,6 @@ module.config.json
 bookmarks.json
 saves/
 ui/auto-items.json
+ui/icon-cache/
 scripts/*
 !scripts/generate-manifest.js

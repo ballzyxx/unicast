@@ -2,6 +2,7 @@
 
 const fs = require("fs");
 const { collectAndApply } = require("./detect-items");
+const { install: installIcons } = require("./icon-proxy");
 
 module.exports = function (modModule) {
 	const factory = modModule.exports;
@@ -37,6 +38,7 @@ module.exports = function (modModule) {
 	};
 
 	modModule.exports = function (mod) {
+		installIcons();
 		try {
 			factory.call(this, mod);
 		} finally {

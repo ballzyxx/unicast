@@ -105,7 +105,7 @@
                     <div class="content" v-for="item in paginated('favs')" :key="item">
                         <div class="icon" v-if="bookmarks['items'].indexOf(item) > -1">
                             <img class="smooth" :class="{active: equipped.indexOf(item) > -1}"
-                                :src="'https://static.teragame.su/unicast-data/icons/' + unidata.items[item].icon + '.png'"
+                                :src="'icons/' + unidata.items[item].icon + '.png'"
                                 @click="equip(item)">
                         </div>
                         <div class="entry" v-if="bookmarks['items'].indexOf(item) > -1">
@@ -153,7 +153,7 @@
                     <div class="content" v-for="item in paginated('favMounts')" :key="item.id">
                         <div class="icon">
                             <img class="smooth" :class="{active: equipped.indexOf(item.id) > -1}"
-                                :src="'https://static.teragame.su/unicast-data/icons/' + item.icon + '.png'"
+                                :src="'icons/' + item.icon + '.png'"
                                 @click="equipMount(item.id)">
                         </div>
                         <div class="entry">
@@ -633,7 +633,7 @@
                         <h3>Hair Styles</h3>
                         <div class="icon" v-for="(item, index) in faces_decals[race][gender]['hairs']">
                             <img class="smooth" :class="{active: ws_unicast.appearance.hairStyle == index}"
-                                :src="'https://static.teragame.su/unicast-data/icons/' + faces_decals[race][gender]['hairs'][index] + '.png'"
+                                :src="'icons/' + faces_decals[race][gender]['hairs'][index] + '.png'"
                                 @click="updateSubKey('appearance', 'hairStyle', Number(index))">
                         </div>
                     </div>
@@ -644,7 +644,7 @@
                         <h3>Faces</h3>
                         <div class="icon" v-for="(item, index) in faces_decals[race][gender]">
                             <img class="smooth" :class="{active: ws_unicast.appearance.faceStyle == index}"
-                                :src="'https://static.teragame.su/unicast-data/icons/' + faces_decals[race][gender][index].icon + '.png'"
+                                :src="'icons/' + faces_decals[race][gender][index].icon + '.png'"
                                 @click="updateSubKey('appearance', 'faceStyle', index)" v-if="index !== 'hairs'">
                         </div>
                     </div>
@@ -657,7 +657,7 @@
                         <div class="icon"
                             v-for="(item, index) in faces_decals[race][gender][ws_unicast.appearance.faceStyle].decals">
                             <img class="smooth" :class="{active: ws_unicast.appearance.faceDecal == index}"
-                                :src="'https://static.teragame.su/unicast-data/icons/' + faces_decals[race][gender][ws_unicast.appearance.faceStyle]['decals'][index] + '.png'"
+                                :src="'icons/' + faces_decals[race][gender][ws_unicast.appearance.faceStyle]['decals'][index] + '.png'"
                                 @click="updateSubKey('appearance', 'faceDecal', index)">
                         </div>
                     </div>
@@ -668,7 +668,7 @@
                             v-for="(item, index) in faces_decals[race][gender][ws_unicast.appearance.faceStyle].decos">
 
                             <img class="smooth" :class="{active: ws_unicast.appearance.tattoos == index}"
-                                :src="'https://static.teragame.su/unicast-data/icons/' + faces_decals[race][gender][ws_unicast.appearance.faceStyle]['decos'][index] + '.png'"
+                                :src="'icons/' + faces_decals[race][gender][ws_unicast.appearance.faceStyle]['decos'][index] + '.png'"
                                 @click="updateSubKey('appearance', 'tattoos', index)">
                         </div>
                     </div>
@@ -852,7 +852,7 @@
                         <div class="icon">
                             <img class="smooth"
                                 :class="{active: equippedAbnormals.indexOf(item.id) > -1 || ws_unicast.uniAbn.indexOf(item.id) > -1}"
-                                :src="'https://static.teragame.su/unicast-data/icons/' + item.icon + '.png'"
+                                :src="'icons/' + item.icon + '.png'"
                                 @click="abnormal(item.id, item.type)">
                         </div>
                         <div class="entry">
@@ -933,7 +933,7 @@
                         <div class="icon">
                             <img class="smooth"
                                 :class="{active: item.id === 0 ? ws_unicast['styleWeapon'] === 0 && ws_unicast['weapon'] === 0 : equipped.indexOf(item.id) > -1}"
-                                :src="'https://static.teragame.su/unicast-data/icons/' + item.icon + '.png'" @click="equip(item.id)">
+                                :src="'icons/' + item.icon + '.png'" @click="equip(item.id)">
                         </div>
                         <div class="entry">
                             <i class="smooth fa fa-star bookmark-icon"
@@ -978,7 +978,7 @@
                     <div class="content" v-for="item in paginated('gear')" :key="item.id">
                         <div class="icon">
                             <img class="smooth" :class="{active: equipped.indexOf(item.id) > -1}"
-                                :src="'https://static.teragame.su/unicast-data/icons/' + item.icon + '.png'" @click="equip(item.id)">
+                                :src="'icons/' + item.icon + '.png'" @click="equip(item.id)">
                         </div>
                         <div class="entry">
                             <i class="smooth fa fa-star bookmark-icon"
@@ -1024,7 +1024,7 @@
                         <div class="content" v-for="item in paginated('mounts')" :key="item.id">
                             <div class="icon">
                                 <img class="smooth" :class="{active: equipped.indexOf(item.id) > -1}"
-                                    :src="'https://static.teragame.su/unicast-data/icons/' + item.icon + '.png'"
+                                    :src="'icons/' + item.icon + '.png'"
                                     @click="equipMount(item.id)">
                             </div>
                             <div class="entry">
@@ -1109,7 +1109,7 @@
                     <div class="content" v-for="item in paginated('footsteps')" :key="item.id">
                         <div class="icon">
                             <img class="smooth" :class="{active: equipped.indexOf(item.id) > -1}"
-                                :src="'https://static.teragame.su/unicast-data/icons/' + item.icon + '.png'" @click="equip(item.id)">
+                                :src="'icons/' + item.icon + '.png'" @click="equip(item.id)">
                         </div>
                         <div class="entry">
                             <i class="smooth fa fa-star bookmark-icon"

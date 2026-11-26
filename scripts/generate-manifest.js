@@ -7,7 +7,7 @@ const path = require('path');
 const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'manifest.json');
 
-const SKIP_DIR = new Set(['.git', 'scripts', 'saves', 'presets']);
+const SKIP_DIR = new Set(['.git', 'scripts', 'saves', 'presets', 'icon-cache']);
 const SKIP_FILE = new Set([
     'module.config.json',
     '.gitignore',
