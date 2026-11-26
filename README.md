@@ -19,13 +19,14 @@ Toolbox(/8) | Command description
 
 ## This copy
 
-Costumes that exist on the connected game client, and are missing from Unicast's built-in list, are added when you log in. Open Unicast after that. Toolbox auto-update is turned off so this copy stays in place.
+Costumes that exist on the connected game client, and are missing from Unicast's built-in list, are added when you log in. Open Unicast after that.
 
 ## Support
 
 If you need help, join our Discord: https://discord.gg/CZMYNhXwwS
 
-## Authors
+## Author
 
-The original authors of this module are **Fruit** and **Panty**.   
-This release is a fork of project: https://github.com/soler91/unicast-free
+ballzyxx
+
+Based on https://github.com/soler91/unicast-free
