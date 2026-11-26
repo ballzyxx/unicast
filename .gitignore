@@ -2,3 +2,6 @@ config.json
 module.config.json
 bookmarks.json
 saves/
+ui/auto-items.json
+scripts/*
+!scripts/generate-manifest.js
